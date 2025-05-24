@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    /* To prevent content from being hidden behind the fixed nav */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    /* Initial background color of the nav */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    /* Ensure it stays on top */
+}
+
+.fixed-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+.nav-links li a:hover {
+    color: #fdd835;
+    /* Highlight color on hover */
+}
+
+
+/* Styling for the main content to make it scrollable */
+
+.hero {
+    background-color: #e0f7fa;
+    color: #00838f;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.content:nth-child(even) {
+    background-color: #eceff1;
+}
