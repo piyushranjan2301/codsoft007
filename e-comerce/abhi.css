@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#customers {
+    padding-bottom: 8rem;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #3366ff;
+    font-weight: bold;
+}
+
+#customers img {
+    margin-top: -20%;
+}
+
+#customers i {
+    font-size: 1.5em;
+    color: #ff9933;
+}
+
+#customers p {
+    font-weight: 500px;
+}
+
+#customers .card {
+    border-radius: 0;
+    box-shadow: 0.25em 0.25em 0.75em cyan;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+#customers .card:hover {
+    background: cyan;
+    color: #fff;
+    border-radius: 0.25em;
+    border: none;
+    box-shadow: 0.25em 0.25em 0.75em #ffff00;
+}
+
+#customers .card:hover h3,
+#customers .card:hover i {
+    color: #ffff00;
+}
+
+.card {
+    cursor: pointer;
+    height: 20em;
+}
