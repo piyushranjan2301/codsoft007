@@ -1,0 +1,75 @@
+body {
+    margin: 10rem;
+    padding: 6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("https://www.brides.com/thmb/b6xaC1t9AYr5asQ7TwIH4Kp25dA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__brides__public__brides-services__production__2019__04__23__5cbf5c39580b8c7a9e5d109b_ali-and-paul-co-ba8608067aaf429e994febe5d6194268.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.4rem;
+}
+
+.box {
+    width: 30rem;
+    height: 25rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(76, 72, 72);
+    text-align: center;
+    opacity: 0.8;
+}
+
+.box h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    font-size: 1.5rem;
+    font-weight: 200;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border: 0.1rem solid rgb(172, 150, 29);
+    padding: 1rem 1rem;
+    width: 1rem;
+    outline: none;
+    color: white;
+    border-radius: 1rem;
+    transition: 0.25rem;
+}
+
+.box input[type="text"],
+.box input[type="password"]:focus {
+    width: 27rem;
+    border-color: black;
+}
+
+.box input[type="submit"] {
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border: 0.1rem rgb(237, 6, 6);
+    padding: 1rem 2rem;
+    outline: none;
+    border-radius: 01rem;
+    transition: 0.25rem;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background-color: rgb(208, 148, 37);
+}
