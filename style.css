@@ -1,75 +1,98 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding-top: 60px;
-    /* To prevent content from being hidden behind the fixed nav */
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    /* Initial background color of the nav */
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    /* Ensure it stays on top */
-}
-
-.fixed-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
+* {
     margin: 0;
     padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-links li {
-    margin-left: 20px;
+.search input {
+    height: 60px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #555;
+    background: #ebfffc;
+    margin-right: 16px;
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px 25px;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    /* Smooth color transition on hover */
+.search button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.nav-links li a:hover {
-    color: #fdd835;
-    /* Highlight color on hover */
+.search button:img {
+    width: 5px;
+    background: #fff;
 }
 
-
-/* Styling for the main content to make it scrollable */
-
-.hero {
-    background-color: #e0f7fa;
-    color: #00838f;
-    padding: 100px 20px;
-    text-align: center;
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
 }
 
-.content {
-    padding: 80px 20px;
-    text-align: center;
+.weather h1 {
+    font-size: 50px;
+    font-weight: 500;
 }
 
-.content:nth-child(even) {
-    background-color: #eceff1;
+.weather h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 20px;
+    /* font-weight: 500; */
+    margin-top: -6px;
 }
