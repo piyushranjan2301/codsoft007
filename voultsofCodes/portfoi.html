@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgba(18, 18, 62);
+            position: relative;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size=1.4rem;
+        }
+        
+        main hr {
+            border: 0;
+            height: 1.2px;
+            background-color: white;
+            margin: 40px 84px;
+        }
+        
+        .left {
+            font-size: 1.04rem;
+        }
+        
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 180px 0;
+        }
+        
+        .firstSection>div {
+            width: 30%;
+        }
+        
+        .leftSection {
+            font-size: 3rem;
+        }
+        
+        .rightSection img {
+            width: 80%;
+        }
+        
+        .purple {
+            color: blueviolet;
+        }
+        
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+        
+        .text-gray {
+            color: gray;
+        }
+        
+        .secondSection .box {
+            margin: 56px 0;
+            background: white;
+            height: 2px;
+            display: flex;
+            width: 76vw;
+        }
+        
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+        
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 9px;
+        }
+        
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+        
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        
+        .footer ul {
+            list-style: none;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Piyush's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Piyush Ranjan</span>
+                <div>and I am a passionate</div>
+                <div>web Developer</div>
+                <!-- Element to contain animated typing -->
+
+                <!-- Load library from the CDN -->
+
+                <!-- Setup and start animation! -->
+
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png.png" alt="" />
+            </div>
+        </section>
+        <hr />
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">HTML dEVELOPER </div>
+                    <div class="vertical-desc">
+                        HTML (HyperText Markup Language) is the backbone of web development. It structures web pages by using elements and tags that define content, such as headings, paragraphs, images, and links. Unlike programming languages, HTML doesn't perform logic—it simply
+                        organizes content.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">Node.js Developer </div>
+                    <div class="vertical-desc">
+                        Node.js is a powerful JavaScript runtime environment that allows developers to run JavaScript code outside the browser. It's widely used for building fast, scalable, and efficient server-side applications
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">Full Stack Developer </div>
+                    <div class="vertical-desc">
+                        A Full Stack Developer is someone who works on both the frontend (client-side) and backend (server-side) of web applications. They have a deep understanding of various technologies, making them versatile problem solvers.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">Mern Stack Developer </div>
+                    <div class="vertical-desc">
+                        A MERN Stack Developer specializes in building web applications using the MERN stack
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">Video Editior </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae placeat corrupti est eum delectus rerum sunt temporibus, exercitationem ducimus debitis porro cumque nobis accusantium numquam magni vel iusto incidunt.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">Graphics Designer </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae placeat corrupti est eum delectus rerum sunt temporibus, exercitationem ducimus debitis porro cumque nobis accusantium numquam magni vel iusto incidunt.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="" />
+                    <div class="vertical-title">HTML dEVELOPER </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae placeat corrupti est eum delectus rerum sunt temporibus, exercitationem ducimus debitis porro cumque nobis accusantium numquam magni vel iusto incidunt.
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Sakshi's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Linkdin</li>
+                    <li>Gmail</li>
+                    <li>GitHub</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Project</li>
+                    <li>LeetCode</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Web Developer",
+                "Full Stack Developer",
+                "MERN Stack Developer",
+                "React.js Developer",
+                "Video Editor",
+            ],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
